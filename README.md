@@ -1,11 +1,22 @@
-# WordPress主题 - 内容管家辅助主题
-# 专为「内容管家 (Content Auto Manager)」插件设计的官方配套主题
+# 内容管家辅助主题
+
+专为「内容管家 (Content Auto Manager)」插件设计的官方配套主题。
+
+**注意：此主题仅限与内容自动生成管家插件配套使用，无法独立使用。**
 
 ## 主题信息
 - **主题名称**: 内容管家辅助主题
 - **版本**: 1.0.1
 - **作者**: kdjingpai.com
 - **描述**: 一套将自动化内容转化为SEO增长引擎的前端解决方案
+
+## 配套插件
+
+此主题必须与「内容自动生成管家」插件配合使用。
+
+插件项目地址：
+- GitHub仓库：https://github.com/pptt121212/content-auto-manager
+- 下载地址：https://github.com/pptt121212/content-auto-manager/releases
 
 ## 核心特色功能 (插件 + 主题)
 *   **SEO矩阵 - 自动化二级域名站群**  
@@ -23,9 +34,14 @@
 * **动态推荐**: 智能推荐相关文章，增加用户站内停留时间。
 
 ## 快速上手
-1.  启用「内容管家」插件和本主题。
-2.  访问后台"主题设置"页面，根据引导完成配置。
-3.  内容发布后，在设置页面中生成`sitemap.xml`。
+1.  安装并启用「内容自动生成管家」插件。
+2.  启用本主题。
+3.  访问后台"主题设置"页面，根据引导完成配置。
+4.  内容发布后，在设置页面中生成`sitemap.xml`。
+
+## 下载
+
+- **主题zip包**: https://github.com/pptt121212/content-manager-custom-theme/releases/download/v1.0.1/content-manager-custom-theme.zip
 
 ## 版本管理
 本主题使用Git进行版本管理。所有版本发布都可通过GitHub Releases获取。
