@@ -1,0 +1,34 @@
+# WordPress主题文件
+wp-config.php
+wp-content/debug.log
+
+# IDE相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 缓存
+cache/
+*.cache
+
+# 日志
+*.log
+logs/
+
+# 编辑器备份
+*~
+*.bak
+*.orig
+*.save
