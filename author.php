@@ -1,6 +1,6 @@
 <?php
 /**
- * Category archive template.
+ * Author archive template.
  *
  * @package Content_Manager_Custom_Theme
  */
@@ -10,15 +10,18 @@ get_header(); ?>
 <div class="container">
     <div class="sitemap-container">
         <h1 class="sitemap-title">
-            <?php single_cat_title(); ?> 
+            <?php 
+            $author = get_queried_object();
+            echo esc_html($author->display_name);
+            ?> 
             <small class="sitemap-subtitle">
                 <?php printf(__('(共 %s 篇文章)', 'content-manager-custom-theme'), $wp_query->found_posts); ?>
             </small>
         </h1>
         
-        <?php if (category_description()) : ?>
+        <?php if ($author->description) : ?>
             <div class="sitemap-description">
-                <?php echo category_description(); ?>
+                <?php echo wp_kses_post($author->description); ?>
             </div>
         <?php endif; ?>
         
@@ -58,7 +61,7 @@ get_header(); ?>
             
         <?php else : ?>
             <p class="no-content-notice">
-                <?php echo __('此分类下暂无文章内容', 'content-manager-custom-theme'); ?>
+                <?php echo __('该作者暂无文章内容', 'content-manager-custom-theme'); ?>
             </p>
         <?php endif; ?>
     </div>

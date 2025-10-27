@@ -1,0 +1,81 @@
+# 内容管家辅助主题 - robots.txt
+# 适用于WordPress网站的标准robots.txt配置
+
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /wp-content/cache/
+Disallow: /wp-content/languages/
+Disallow: /wp-content/uploads/*.php$
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+Disallow: /readme.html
+Disallow: /license.txt
+Disallow: /license.html
+Disallow: /*?*
+Disallow: /*.php$
+
+# 允许访问重要的资源
+Allow: /wp-content/uploads/
+Allow: /wp-content/themes/content-manager-custom-theme/
+
+# Sitemap
+Sitemap: https://www.example.com/sitemap.xml
+
+# 禁止特定爬虫访问
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# 禁止AI爬虫
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Ai2Bot-Dolma
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: DuckAssistBot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /

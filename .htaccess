@@ -1,0 +1,132 @@
+# 内容管家辅助主题安全配置
+
+# 禁止直接访问PHP文件
+<Files "*.php">
+  Order Deny,Allow
+  Deny from all
+</Files>
+
+# 允许访问特定的PHP文件
+<Files "index.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+<Files "functions.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+<Files "header.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+<Files "footer.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+<Files "single.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+<Files "category.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+<Files "tag-channel.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+<Files "404.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+# 禁止访问敏感文件
+<Files "~*">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "*.bak">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "*.backup">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "*.old">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "*.save">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# 禁止访问配置文件
+<Files "wp-config.php">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# 禁止访问日志文件
+<Files "*.log">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# 禁止访问数据库文件
+<Files "*.sql">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# 禁止访问缓存文件
+<Files "*.cache">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# 禁止访问临时文件
+<Files "*.tmp">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "*.temp">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# 禁止访问版本控制文件
+<Files ".git*">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# 禁止访问编辑器备份文件
+<Files "*~">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "#*">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# 禁止访问系统文件
+<Files ".*">
+  Order Allow,Deny
+  Deny from all
+</Files>

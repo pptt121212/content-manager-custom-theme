@@ -1,0 +1,35 @@
+{
+  "name": "pptt121212/content-manager-custom-theme",
+  "description": "专为「内容管家 (Content Auto Manager)」插件设计的官方配套主题，一套将自动化内容转化为SEO增长引擎的前端解决方案。",
+  "type": "wordpress-theme",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "content-auto-manager",
+    "seo",
+    "automation"
+  ],
+  "homepage": "https://github.com/pptt121212/content-manager-custom-theme",
+  "license": "Custom Non-Commercial License",
+  "authors": [
+    {
+      "name": "kdjingpai.com",
+      "homepage": "https://www.kdjingpai.com/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/pptt121212/content-manager-custom-theme/issues",
+    "source": "https://github.com/pptt121212/content-manager-custom-theme"
+  },
+  "require": {
+    "php": ">=7.4",
+    "wordpress/wordpress": "^5.0"
+  },
+  "suggest": {
+    "pptt121212/content-auto-manager": "内容自动生成管家插件是此主题的必需依赖项"
+  },
+  "extra": {
+    "wordpress-install-path": "wp-content/themes/content-manager-custom-theme"
+  }
+}

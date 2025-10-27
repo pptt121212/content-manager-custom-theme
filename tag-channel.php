@@ -91,11 +91,11 @@ show_admin_bar(false);
         <div class="container">
             <?php if ($parent_article_url && $parent_article_title) : ?>
                 <a href="<?php echo esc_url($parent_article_url); ?>" class="return-link">
-                    ← 返回文章: <?php echo esc_html($parent_article_title); ?>
+                    <?php echo __('← 返回文章:', 'content-manager-custom-theme') . ' ' . esc_html($parent_article_title); ?>
                 </a>
             <?php else: ?>
                 <a href="<?php echo home_url(); ?>" class="return-link">
-                    ← 返回首页
+                    <?php echo __('← 返回首页', 'content-manager-custom-theme'); ?>
                 </a>
             <?php endif; ?>
         </div>
@@ -110,14 +110,14 @@ show_admin_bar(false);
         ?>
 
         <h1 class="sitemap-title">
-            <?php echo esc_html($keyword); ?>相关文章
+            <?php echo esc_html($keyword); ?><?php echo __('相关文章', 'content-manager-custom-theme'); ?>
             <small class="sitemap-subtitle">
-                (共 <?php echo $article_count; ?> 篇文章)
+                <?php printf(__('(共 %s 篇文章)', 'content-manager-custom-theme'), $article_count); ?>
             </small>
         </h1>
 
         <p class="sitemap-description">
-            与<?php echo $parent_article_title ? esc_html($parent_article_title) : '当前文章'; ?>中<?php echo esc_html($keyword); ?>主题相关的最新文章
+            <?php printf(__('与%s中%s主题相关的最新文章', 'content-manager-custom-theme'), $parent_article_title ? esc_html($parent_article_title) : __('当前文章', 'content-manager-custom-theme'), esc_html($keyword)); ?>
         </p>
 
         <?php if ($tag_articles && !empty($tag_articles)) : ?>
@@ -128,11 +128,11 @@ show_admin_bar(false);
                             <?php echo esc_html($article['title']); ?>
                         </a>
                         <div class="sitemap-meta">
-                            发布时间: <?php echo esc_html($article['date']); ?>
+                            <?php printf(__('发布时间: %s', 'content-manager-custom-theme'), esc_html($article['date'])); ?>
                             <?php
                             $word_count = isset($article['word_count']) ? $article['word_count'] : 0;
                             if ($word_count) {
-                                echo ' | 约' . $word_count . '字';
+                                echo ' | ' . sprintf(__('约%s字', 'content-manager-custom-theme'), $word_count);
                             }
                             ?>
                         </div>
@@ -141,11 +141,11 @@ show_admin_bar(false);
             </ul>
         <?php else : ?>
             <p class="no-content-notice">
-                该标签下暂无相关文章内容
+                <?php echo __('该标签下暂无相关文章内容', 'content-manager-custom-theme'); ?>
                 <?php if ($parent_article_url && $parent_article_title) : ?>
-                    | <a href="<?php echo esc_url($parent_article_url); ?>" style="color: #3498db; text-decoration: none;">返回文章</a>
+                    | <a href="<?php echo esc_url($parent_article_url); ?>" style="color: #3498db; text-decoration: none;"><?php echo __('返回文章', 'content-manager-custom-theme'); ?></a>
                 <?php else: ?>
-                    | <a href="<?php echo home_url(); ?>" style="color: #3498db; text-decoration: none;">返回首页</a>
+                    | <a href="<?php echo home_url(); ?>" style="color: #3498db; text-decoration: none;"><?php echo __('返回首页', 'content-manager-custom-theme'); ?></a>
                 <?php endif; ?>
             </p>
         <?php endif; ?>

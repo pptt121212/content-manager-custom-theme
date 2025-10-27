@@ -1,0 +1,32 @@
+{
+  "name": "content-manager-custom-theme",
+  "version": "1.0.2",
+  "description": "专为「内容管家 (Content Auto Manager)」插件设计的官方配套主题，一套将自动化内容转化为SEO增长引擎的前端解决方案。",
+  "main": "index.php",
+  "scripts": {
+    "build": "zip -r content-manager-custom-theme-v${npm_package_version}.zip . -x \"*.git/*\" \"*.gitignore\" \"node_modules/*\" \"package.json\" \"package-lock.json\"",
+    "release": "npm run build && echo \"主题zip包已生成: content-manager-custom-theme-v${npm_package_version}.zip\"",
+    "clean": "rm -f content-manager-custom-theme-*.zip"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "content-auto-manager",
+    "seo",
+    "automation"
+  ],
+  "author": "kdjingpai.com",
+  "license": "Custom Non-Commercial License",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pptt121212/content-manager-custom-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pptt121212/content-manager-custom-theme/issues"
+  },
+  "homepage": "https://github.com/pptt121212/content-manager-custom-theme#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "private": true
+}

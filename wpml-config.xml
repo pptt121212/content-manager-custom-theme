@@ -1,0 +1,52 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">content_auto_topic</custom-type>
+        <custom-type translate="1">content_auto_article_task</custom-type>
+        <custom-type translate="1">content_auto_rule</custom-type>
+    </custom-types>
+    
+    <taxonomies>
+        <taxonomy translate="1">content_auto_category</taxonomy>
+        <taxonomy translate="1">content_auto_tag</taxonomy>
+    </taxonomies>
+    
+    <admin-texts>
+        <key name="cm_theme_options">
+            <key name="site_logo" />
+            <key name="home_hero_image" />
+            <key name="button1_text" />
+            <key name="button1_url" />
+            <key name="button2_text" />
+            <key name="button2_url" />
+            <key name="sidebar_ad_code" />
+            <key name="friend_link_1_text" />
+            <key name="friend_link_1_url" />
+            <key name="friend_link_2_text" />
+            <key name="friend_link_2_url" />
+            <key name="friend_link_3_text" />
+            <key name="friend_link_3_url" />
+            <key name="friend_link_4_text" />
+            <key name="friend_link_4_url" />
+            <key name="friend_link_5_text" />
+            <key name="friend_link_5_url" />
+        </key>
+    </admin-texts>
+    
+    <language-switcher-settings>
+        <key name="icl_lang_sel_config">
+            <key name="font-current-normal">#444444</key>
+            <key name="font-current-hover">#000000</key>
+            <key name="background-current-normal">#ffffff</key>
+            <key name="background-current-hover">#eeeeee</key>
+            <key name="font-other-normal">#444444</key>
+            <key name="font-other-hover">#000000</key>
+            <key name="background-other-normal">#ffffff</key>
+            <key name="background-other-hover">#eeeeee</key>
+            <key name="border">#cdcdcd</key>
+        </key>
+        <key name="icl_language_switcher_sidebar">
+            <key name="widget_title"> Languages </key>
+        </key>
+        <key name="icl_widget_theme">Vertical</key>
+    </language-switcher-settings>
+</wpml-config>

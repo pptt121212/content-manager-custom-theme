@@ -1,0 +1,75 @@
+# Copyright (C) 2025 kdjingpai.com
+# This file is distributed under the same license as the Content Manager Custom Theme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Content Manager Custom Theme 1.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/pptt121212/content-manager-custom-theme/issues\n"
+"POT-Creation-Date: 2025-10-26 22:45:00+00:00\n"
+"PO-Revision-Date: 2025-10-26 22:45:00+00:00\n"
+"Last-Translator: kdjingpai.com\n"
+"Language-Team: zh_CN\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Theme Name of the plugin/theme
+msgid "内容管家辅助主题"
+msgstr "内容管家辅助主题"
+
+#. Theme Description of the plugin/theme
+msgid "专为「内容管家 (Content Auto Manager)」插件设计的官方配套主题，一套将自动化内容转化为SEO增长引擎的前端解决方案。此主题仅限与内容自动生成管家插件配套使用，无法独立使用。"
+msgstr "专为「内容管家 (Content Auto Manager)」插件设计的官方配套主题，一套将自动化内容转化为SEO增长引擎的前端解决方案。此主题仅限与内容自动生成管家插件配套使用，无法独立使用。"
+
+#. Author of the plugin/theme
+msgid "kdjingpai.com"
+msgstr "kdjingpai.com"
+
+#: 404.php:15
+msgid "返回首页"
+msgstr "返回首页"
+
+#: 404.php:20
+msgid "您可能感兴趣的内容："
+msgstr "您可能感兴趣的内容："
+
+#: category.php:12
+msgid "(共 %s 篇文章)"
+msgstr "(共 %s 篇文章)"
+
+#: category.php:30
+msgid "发布时间: %s"
+msgstr "发布时间: %s"
+
+#: category.php:58
+msgid "此分类下暂无文章内容"
+msgstr "此分类下暂无文章内容"
+
+#: functions.php:22
+msgid "主导航菜单"
+msgstr "主导航菜单"
+
+#: functions.php:485
+msgid "内容管家主题设置"
+msgstr "内容管家主题设置"
+
+#: functions.php:486
+msgid "主题设置"
+msgstr "主题设置"
+
+#: functions.php:1587
+msgid "<strong>内容管家辅助主题：</strong>授权无效或未激活，部分高级功能（如二级域名）将不可用。请前往 <a href=\"%s\">主题设置</a> 页面激活。"
+msgstr "<strong>内容管家辅助主题：</strong>授权无效或未激活，部分高级功能（如二级域名）将不可用。请前往 <a href=\"%s\">主题设置</a> 页面激活。"
+
+#: tag-channel.php:98
+msgid "← 返回首页"
+msgstr "← 返回首页"
+
+#: tag-channel.php:131
+msgid "发布时间: %s"
+msgstr "发布时间: %s"
+
+#: tag-channel.php:148
+msgid "| <a href=\"%s\" style=\"color: #3498db; text-decoration: none;\">返回首页</a>"
+msgstr "| <a href=\"%s\" style=\"color: #3498db; text-decoration: none;\">返回首页</a>"

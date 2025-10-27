@@ -4,6 +4,8 @@ Description: 专为「内容管家 (Content Auto Manager)」插件设计的官�
 Version: 1.0.1
 Author: kdjingpai.com
 Requires Plugins: content-auto-manager
+Text Domain: content-manager-custom-theme
+Domain Path: /languages
 */
 
 /* 重置和基础样式 */

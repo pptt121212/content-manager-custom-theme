@@ -1,53 +1,85 @@
 # 内容管家辅助主题
 
-专为「内容管家 (Content Auto Manager)」插件设计的官方配套主题。
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/pptt121212/content-manager-custom-theme)](https://github.com/pptt121212/content-manager-custom-theme/releases)
+[![GitHub](https://img.shields.io/github/license/pptt121212/content-manager-custom-theme)](https://github.com/pptt121212/content-manager-custom-theme/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/pptt121212/content-manager-custom-theme)](https://github.com/pptt121212/content-manager-custom-theme/stargazers)
 
-**注意：此主题仅限与内容自动生成管家插件配套使用，无法独立使用。**
+专为「内容自动生成管家」插件设计的官方配套主题，一套将自动化内容转化为SEO增长引擎的前端解决方案。
 
-## 主题信息
-- **主题名称**: 内容管家辅助主题
-- **版本**: 1.0.1
-- **作者**: kdjingpai.com
-- **描述**: 一套将自动化内容转化为SEO增长引擎的前端解决方案
+## ⚠️ 重要提示
 
-## 配套插件
+**此主题仅限与「内容自动生成管家」插件配套使用，无法独立使用。**
 
-此主题必须与「内容自动生成管家」插件配合使用。
+## 🎯 核心特色功能 (插件 + 主题)
 
-插件项目地址：
-- GitHub仓库：https://github.com/pptt121212/content-auto-manager
-- 下载地址：https://github.com/pptt121212/content-auto-manager/releases
+### 🔗 SEO矩阵 - 自动化二级域名站群
+自动为每篇文章创建独立的二级域名，无需手动配置，快速构建拥有海量收录潜力的SEO内容矩阵。
 
-## 核心特色功能 (插件 + 主题)
-*   **SEO矩阵 - 自动化二级域名站群**  
-    自动为每篇文章创建独立的二级域名，无需手动配置，快速构建拥有海量收录潜力的SEO内容矩阵。
+### 📚 专题聚合 - 一文一专题
+将单篇文章页升级为聚合"内容角度"、"用户价值"、"SEO关键词"的核心专题页，最大化单页信息密度与SEO价值。
 
-*   **专题聚合 - 一文一专题**  
-    将单篇文章页升级为聚合"内容角度"、"用户价值"、"SEO关键词"的核心专题页，最大化单页信息密度与SEO价值。
+### 🔄 深度链接 - 关键词子频道
+自动为专题页下的每个关键词生成独立的聚合列表页，构建深度互链的"主题-关键词"内容簇，提升网站权重。
 
-*   **深度链接 - 关键词子频道**  
-    自动为专题页下的每个关键词生成独立的聚合列表页，构建深度互链的"主题-关键词"内容簇，提升网站权重。
+## 🛠 基础功能与优化
 
-## 基础功能与优化
-* **内置SEO**: 提供XML网站地图生成器、自动Meta标签、Schema.org结构化数据。
-* **集中控制**: 独立的"主题设置"面板，统一管理所有功能选项。
-* **动态推荐**: 智能推荐相关文章，增加用户站内停留时间。
+- **内置SEO**: 提供XML网站地图生成器、自动Meta标签、Schema.org结构化数据
+- **集中控制**: 独立的"主题设置"面板，统一管理所有功能选项
+- **动态推荐**: 智能推荐相关文章，增加用户站内停留时间
 
-## 快速上手
-1.  安装并启用「内容自动生成管家」插件。
-2.  启用本主题。
-3.  访问后台"主题设置"页面，根据引导完成配置。
-4.  内容发布后，在设置页面中生成`sitemap.xml`。
+## 📦 配套插件
 
-## 下载
+此主题必须与「内容自动生成管家」插件配合使用：
 
-- **主题zip包**: https://github.com/pptt121212/content-manager-custom-theme/releases/download/v1.0.1/content-manager-custom-theme.zip
+- [插件GitHub仓库](https://github.com/pptt121212/content-auto-manager)
+- [插件下载地址](https://github.com/pptt121212/content-auto-manager/releases)
 
-## 版本管理
-本主题使用Git进行版本管理。所有版本发布都可通过GitHub Releases获取。
+## 🚀 快速安装
 
-## 开发支持
-如需进行主题的迭代开发，请使用Git进行版本管理。
+### 方法一：通过WordPress后台安装
+1. 下载主题zip包：[content-manager-custom-theme.zip](https://github.com/pptt121212/content-manager-custom-theme/releases/download/v1.0.1/content-manager-custom-theme.zip)
+2. 进入WordPress后台 → 外观 → 主题
+3. 点击"添加新主题" → "上传主题"
+4. 选择下载的zip文件并上传
+5. 点击"启用"
 
-## 支持
-如遇到问题或有建议，请提交Issue。
+### 方法二：通过FTP安装
+1. 下载主题zip包并解压
+2. 将解压后的文件夹上传到 `/wp-content/themes/` 目录
+3. 在WordPress后台 → 外观 → 主题中启用
+
+## 🛠 快速上手
+
+1. 安装并启用「内容自动生成管家」插件
+2. 安装并启用本主题
+3. 访问后台"主题设置"页面，根据引导完成配置
+4. 内容发布后，在设置页面中生成`sitemap.xml`
+
+## 📖 文档
+
+- [完整文档](https://github.com/pptt121212/content-manager-custom-theme/blob/main/docs/index.md)
+- [使用指南](https://github.com/pptt121212/content-manager-custom-theme/wiki)
+- [常见问题](https://github.com/pptt121212/content-manager-custom-theme/wiki/FAQ)
+
+## 🐛 支持与反馈
+
+如遇到问题或有建议，请在GitHub仓库提交Issue：
+- [提交Issue](https://github.com/pptt121212/content-manager-custom-theme/issues)
+
+## 📄 许可证
+
+本主题采用非商业用途许可证，仅供个人和非商业用途使用。
+
+- 禁止将此主题或其任何部分用于商业目的
+- 禁止二次开发和售卖
+- 严禁将此主题集成到商业产品中
+
+详情请参见 [LICENSE](LICENSE) 文件。
+
+## 🙏 致谢
+
+感谢所有为开源社区做出贡献的开发者们。
+
+---
+
+© 2025 kdjingpai.com - 内容自动生成管家开发团队

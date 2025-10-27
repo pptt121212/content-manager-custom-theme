@@ -1,6 +1,6 @@
 <?php
 /**
- * Category archive template.
+ * Date archive template.
  *
  * @package Content_Manager_Custom_Theme
  */
@@ -10,17 +10,21 @@ get_header(); ?>
 <div class="container">
     <div class="sitemap-container">
         <h1 class="sitemap-title">
-            <?php single_cat_title(); ?> 
+            <?php 
+            if (is_day()) :
+                printf(__('每日归档: %s', 'content-manager-custom-theme'), get_the_date());
+            elseif (is_month()) :
+                printf(__('月度归档: %s', 'content-manager-custom-theme'), get_the_date('F Y'));
+            elseif (is_year()) :
+                printf(__('年度归档: %s', 'content-manager-custom-theme'), get_the_date('Y'));
+            else :
+                _e('博客归档', 'content-manager-custom-theme');
+            endif;
+            ?> 
             <small class="sitemap-subtitle">
                 <?php printf(__('(共 %s 篇文章)', 'content-manager-custom-theme'), $wp_query->found_posts); ?>
             </small>
         </h1>
-        
-        <?php if (category_description()) : ?>
-            <div class="sitemap-description">
-                <?php echo category_description(); ?>
-            </div>
-        <?php endif; ?>
         
         <?php if (have_posts()) : ?>
             <ul class="sitemap-list">
@@ -58,7 +62,7 @@ get_header(); ?>
             
         <?php else : ?>
             <p class="no-content-notice">
-                <?php echo __('此分类下暂无文章内容', 'content-manager-custom-theme'); ?>
+                <?php echo __('此时间段暂无文章内容', 'content-manager-custom-theme'); ?>
             </p>
         <?php endif; ?>
     </div>
