@@ -59,7 +59,7 @@ For Chinese documentation, please see:
 
 The theme includes the following files:
 
-``
+```
 content-manager-custom-theme/
 ├── 404.php              # Custom 404 error page template
 ├── category.php         # Category archive template
@@ -72,7 +72,7 @@ content-manager-custom-theme/
 ├── single.php           # Template for single post display
 ├── style.css            # Main stylesheet with theme information header
 └── tag-channel.php      # Specialized tag archive template for channel pages
-``
+```
 
 ## Requirements
 
