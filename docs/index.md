@@ -16,7 +16,7 @@
 ## 安装说明
 
 ### 方法一：通过WordPress后台安装
-1. 下载主题zip包：[content-manager-custom-theme.zip](https://github.com/pptt121212/content-manager-custom-theme/releases/download/v1.0.1/content-manager-custom-theme.zip)
+1. 下载主题zip包：[content-manager-custom-theme.zip](https://github.com/pptt121212/content-manager-custom-theme/releases/download/v1.0.2/content-manager-custom-theme-v1.0.2.zip)
 2. 进入WordPress后台 → 外观 → 主题
 3. 点击"添加新主题" → "上传主题"
 4. 选择下载的zip文件并上传
