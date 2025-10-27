@@ -10,6 +10,26 @@ Official companion theme designed for the "Content Auto Manager" plugin, a front
 
 **This theme is exclusively designed to work with the "Content Auto Manager" plugin and cannot be used independently.**
 
+### ⚠️ Usage Restrictions
+
+1. **Plugin Dependency**: This theme must be used in conjunction with the "Content Auto Manager" plugin, it cannot run independently
+2. **Functional Limitations**: All core features of the theme require data support from the plugin
+3. **Non-Commercial Use**: This theme is for personal and non-commercial use only
+4. **Commercial Prohibition**: Strictly prohibited from using this theme or any part of it for commercial purposes
+
+### 📦 Companion Plugin
+
+This theme must be used with the "Content Auto Manager" plugin:
+
+- [Plugin GitHub Repository](https://github.com/pptt121212/content-auto-manager)
+- [Plugin Download](https://github.com/pptt121212/content-auto-manager/releases)
+
+## 📚 Detailed Information
+
+For detailed information and usage restrictions about the theme, please refer to:
+- [Theme Information File](THEME_INFO.md)
+- [Usage Guide](USAGE_GUIDE.md)
+
 ## 🎯 Core Features (Plugin + Theme)
 
 ### 🔗 SEO Matrix - Automated Subdomain Site Cluster
@@ -27,30 +47,24 @@ Automatically generates independent aggregation list pages for each keyword unde
 - **Centralized Control**: Independent "theme settings" panel for unified management of all function options
 - **Dynamic Recommendations**: Intelligent recommendation of related articles to increase user dwell time
 
-## 📦 Plugin Dependencies
-
-This theme must be used in conjunction with the "Content Auto Manager" plugin:
-
-- [Plugin GitHub Repository](https://github.com/pptt121212/content-auto-manager)
-- [Plugin Download](https://github.com/pptt121212/content-auto-manager/releases)
-
-**Important Note: This theme cannot be used independently and requires the companion plugin to function properly.**
-
 ## 🚀 Quick Installation
 
 ### Method 1: Install via WordPress Admin
-1. Download the theme zip package: [content-manager-custom-theme.zip](https://github.com/pptt121212/content-manager-custom-theme/releases/download/v1.0.2/content-manager-custom-theme-v1.0.2.zip)
-2. Go to WordPress Admin → Appearance → Themes
-3. Click "Add New Theme" → "Upload Theme"
-4. Select the downloaded zip file and upload
-5. Click "Activate"
+1. Download plugin zip package: [content-auto-manager.zip](https://github.com/pptt121212/content-auto-manager/releases/download/v1.0.2/content-auto-manager-v1.0.2.zip)
+2. Download theme zip package: [content-manager-custom-theme.zip](https://github.com/pptt121212/content-manager-custom-theme/releases/download/v1.0.2/content-manager-custom-theme-v1.0.2.zip)
+3. Go to WordPress Admin → Plugins → Add New → Upload Plugin
+4. Select the plugin zip file and upload
+5. Go to WordPress Admin → Appearance → Themes → Add New → Upload Theme
+6. Select the theme zip file and upload
+7. Activate the plugin first, then activate the theme
 
 ### Method 2: Install via FTP
-1. Download and unzip the theme package
-2. Upload the unzipped folder to `/wp-content/themes/` directory
-3. Activate the theme in WordPress Admin → Appearance → Themes
+1. Download and unzip the plugin and theme packages
+2. Upload the plugin folder to `/wp-content/plugins/` directory
+3. Upload the theme folder to `/wp-content/themes/` directory
+4. In WordPress Admin, activate the plugin first, then activate the theme
 
-## 🛠 Getting Started
+## 🛠 Quick Start
 
 1. Install and activate the "Content Auto Manager" plugin (Project URL: https://github.com/pptt121212/content-auto-manager)
 2. Install and activate this theme
@@ -62,11 +76,19 @@ This theme must be used in conjunction with the "Content Auto Manager" plugin:
 - [Full Documentation](https://github.com/pptt121212/content-manager-custom-theme/blob/main/docs/index.md)
 - [User Guide](https://github.com/pptt121212/content-manager-custom-theme/wiki)
 - [FAQ](https://github.com/pptt121212/content-manager-custom-theme/wiki/FAQ)
+- [Theme Information](THEME_INFO.md)
+- [Usage Instructions](USAGE_GUIDE.md)
+
+## 🌐 Language Versions
+
+- [Chinese Version](README-zh_CN.md)
+- [English Version](README-en.md)
 
 ## 🐛 Support & Feedback
 
 If you encounter issues or have suggestions, please submit an Issue on the GitHub repository:
-- [Submit Issue](https://github.com/pptt121212/content-manager-custom-theme/issues)
+- [Theme Repository Issues](https://github.com/pptt121212/content-manager-custom-theme/issues)
+- [Plugin Repository Issues](https://github.com/pptt121212/content-auto-manager/issues)
 
 ## 📄 License
 
