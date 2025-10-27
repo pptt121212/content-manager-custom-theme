@@ -2,6 +2,9 @@
 
 A WordPress theme designed specifically for content management and automation, optimized to work with the Content Auto Manager plugin.
 
+**Author**: AI Productivity Tools (AI生产力工具)  
+**Source**: [AI Productivity Tools](https://www.kdjingpai.com/)
+
 ## Overview
 
 The Content Manager Custom Theme is a specialized WordPress theme that provides advanced functionality for managing and displaying auto-generated content. It's designed with SEO and content clustering in mind, making it ideal for websites that rely on automated content generation.
