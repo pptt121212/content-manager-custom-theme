@@ -19,8 +19,22 @@ function content_manager_theme_setup() {
     
     // 注册导航菜单
     register_nav_menus(array(
-        'primary' => '主导航菜单',
+        'primary' => __('主导航菜单', 'content-manager-custom-theme'),
     ));
+    
+    // 注册侧边栏
+    register_sidebar(array(
+        'name'          => __('主侧边栏', 'content-manager-custom-theme'),
+        'id'            => 'sidebar-1',
+        'description'   => __('主侧边栏区域', 'content-manager-custom-theme'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
+    
+    // 加载主题文本域
+    load_theme_textdomain('content-manager-custom-theme', get_template_directory() . '/languages');
 }
 add_action('after_setup_theme', 'content_manager_theme_setup');
 
@@ -482,8 +496,8 @@ add_action('after_switch_theme', 'theme_switch_flush_rewrite_rules');
  */
 function content_manager_admin_menu() {
     add_menu_page(
-        '内容管家主题设置',
-        '主题设置',
+        __('内容管家主题设置', 'content-manager-custom-theme'),
+        __('主题设置', 'content-manager-custom-theme'),
         'manage_options',
         'content-manager-theme-settings',
         'content_manager_settings_page_html',
@@ -503,14 +517,14 @@ function content_manager_settings_init() {
     // 添加二级域名设置区域
     add_settings_section(
         'cm_subdomain_section',
-        '文章二级域名设置',
+        __('文章二级域名设置', 'content-manager-custom-theme'),
         'cm_subdomain_section_callback',
         'content-manager-theme-settings'
     );
 
     add_settings_field(
         'subdomain_enabled',
-        '开启二级域名访问',
+        __('开启二级域名访问', 'content-manager-custom-theme'),
         'cm_generic_checkbox_callback',
         'content-manager-theme-settings',
         'cm_subdomain_section',
@@ -519,67 +533,67 @@ function content_manager_settings_init() {
 
     add_settings_field(
         'subdomain_base_domain',
-        '主域名',
+        __('主域名', 'content-manager-custom-theme'),
         'cm_generic_text_callback',
         'content-manager-theme-settings',
         'cm_subdomain_section',
-        array('name' => 'subdomain_base_domain', 'placeholder' => '例如: kdjingpai.com')
+        array('name' => 'subdomain_base_domain', 'placeholder' => __('例如: kdjingpai.com', 'content-manager-custom-theme'))
     );
 
     add_settings_field(
         'main_domain_301_redirect',
-        '主域名301跳转',
+        __('主域名301跳转', 'content-manager-custom-theme'),
         'cm_generic_url_callback',
         'content-manager-theme-settings',
         'cm_subdomain_section',
-        array('name' => 'main_domain_301_redirect', 'placeholder' => '留空则不跳转，输入完整URL则301跳转到该网址')
+        array('name' => 'main_domain_301_redirect', 'placeholder' => __('留空则不跳转，输入完整URL则301跳转到该网址', 'content-manager-custom-theme'))
     );
 
     // 添加网站标识设置区域
     add_settings_section(
         'cm_site_logo_section',
-        '网站标识设置',
+        __('网站标识设置', 'content-manager-custom-theme'),
         'cm_site_logo_section_callback',
         'content-manager-theme-settings'
     );
-    add_settings_field('site_logo', '网站LOGO', 'cm_image_upload_callback', 'content-manager-theme-settings', 'cm_site_logo_section', array('name' => 'site_logo', 'default' => ''));
+    add_settings_field('site_logo', __('网站LOGO', 'content-manager-custom-theme'), 'cm_image_upload_callback', 'content-manager-theme-settings', 'cm_site_logo_section', array('name' => 'site_logo', 'default' => ''));
 
     // 添加首页Hero设置区域
     add_settings_section(
         'cm_home_hero_section',
-        '首页首屏设置',
+        __('首页首屏设置', 'content-manager-custom-theme'),
         'cm_home_hero_section_callback',
         'content-manager-theme-settings'
     );
-    add_settings_field('home_hero_image', '首屏背景图片', 'cm_image_upload_callback', 'content-manager-theme-settings', 'cm_home_hero_section', array('name' => 'home_hero_image', 'default' => ''));
+    add_settings_field('home_hero_image', __('首屏背景图片', 'content-manager-custom-theme'), 'cm_image_upload_callback', 'content-manager-theme-settings', 'cm_home_hero_section', array('name' => 'home_hero_image', 'default' => ''));
 
     // 添加文章页按钮设置区域
     add_settings_section(
         'cm_single_button_section',
-        '文章页按钮设置',
+        __('文章页按钮设置', 'content-manager-custom-theme'),
         'cm_single_button_section_callback',
         'content-manager-theme-settings'
     );
 
-    add_settings_field('button1_text', '按钮1文字', 'cm_generic_text_callback', 'content-manager-theme-settings', 'cm_single_button_section', array('name' => 'button1_text', 'default' => '官方网站'));
-    add_settings_field('button1_url', '按钮1链接', 'cm_generic_url_callback', 'content-manager-theme-settings', 'cm_single_button_section', array('name' => 'button1_url', 'default' => '#'));
-    add_settings_field('button2_text', '按钮2文字', 'cm_generic_text_callback', 'content-manager-theme-settings', 'cm_single_button_section', array('name' => 'button2_text', 'default' => '推荐阅读'));
-    add_settings_field('button2_url', '按钮2链接', 'cm_generic_url_callback', 'content-manager-theme-settings', 'cm_single_button_section', array('name' => 'button2_url', 'default' => '#'));
+    add_settings_field('button1_text', __('按钮1文字', 'content-manager-custom-theme'), 'cm_generic_text_callback', 'content-manager-theme-settings', 'cm_single_button_section', array('name' => 'button1_text', 'default' => __('官方网站', 'content-manager-custom-theme')));
+    add_settings_field('button1_url', __('按钮1链接', 'content-manager-custom-theme'), 'cm_generic_url_callback', 'content-manager-theme-settings', 'cm_single_button_section', array('name' => 'button1_url', 'default' => '#'));
+    add_settings_field('button2_text', __('按钮2文字', 'content-manager-custom-theme'), 'cm_generic_text_callback', 'content-manager-theme-settings', 'cm_single_button_section', array('name' => 'button2_text', 'default' => __('推荐阅读', 'content-manager-custom-theme')));
+    add_settings_field('button2_url', __('按钮2链接', 'content-manager-custom-theme'), 'cm_generic_url_callback', 'content-manager-theme-settings', 'cm_single_button_section', array('name' => 'button2_url', 'default' => '#'));
 
     // 添加文章页右侧广告位设置
     add_settings_section(
         'cm_single_ad_section',
-        '文章页右侧广告位',
+        __('文章页右侧广告位', 'content-manager-custom-theme'),
         'cm_single_ad_section_callback',
         'content-manager-theme-settings'
     );
 
-    add_settings_field('sidebar_ad_code', '自定义代码', 'cm_generic_textarea_callback', 'content-manager-theme-settings', 'cm_single_ad_section', array('name' => 'sidebar_ad_code'));
+    add_settings_field('sidebar_ad_code', __('自定义代码', 'content-manager-custom-theme'), 'cm_generic_textarea_callback', 'content-manager-theme-settings', 'cm_single_ad_section', array('name' => 'sidebar_ad_code'));
 
     // 添加友情链接设置
     add_settings_section(
         'cm_friend_links_section',
-        '友情链接设置',
+        __('友情链接设置', 'content-manager-custom-theme'),
         'cm_friend_links_section_callback',
         'content-manager-theme-settings'
     );
@@ -587,15 +601,15 @@ function content_manager_settings_init() {
     for ($i = 1; $i <= 5; $i++) {
         add_settings_field(
             'friend_link_' . $i . '_text',
-            '友链 ' . $i . ' - 文本',
+            sprintf(__('友链 %s - 文本', 'content-manager-custom-theme'), $i),
             'cm_generic_text_callback',
             'content-manager-theme-settings',
             'cm_friend_links_section',
-            array('name' => 'friend_link_' . $i . '_text', 'placeholder' => '例如：谷歌')
+            array('name' => 'friend_link_' . $i . '_text', 'placeholder' => __('例如：谷歌', 'content-manager-custom-theme'))
         );
         add_settings_field(
             'friend_link_' . $i . '_url',
-            '友链 ' . $i . ' - URL',
+            sprintf(__('友链 %s - URL', 'content-manager-custom-theme'), $i),
             'cm_generic_url_callback',
             'content-manager-theme-settings',
             'cm_friend_links_section',
@@ -606,14 +620,14 @@ function content_manager_settings_init() {
     // 添加主题配色方案设置区域
     add_settings_section(
         'cm_theme_scheme_section',
-        '主题配色方案',
+        __('主题配色方案', 'content-manager-custom-theme'),
         'cm_theme_scheme_section_callback',
         'content-manager-theme-settings'
     );
 
     add_settings_field(
         'theme_scheme',
-        '选择配色方案',
+        __('选择配色方案', 'content-manager-custom-theme'),
         'cm_theme_scheme_callback',
         'content-manager-theme-settings',
         'cm_theme_scheme_section'
@@ -635,7 +649,7 @@ function content_manager_settings_page_html() {
             <?php
             settings_fields('content_manager_settings_group');
             do_settings_sections('content-manager-theme-settings');
-            submit_button('保存更改');
+            submit_button(__('保存更改', 'content-manager-custom-theme'));
             ?>
         </form>
     </div>
