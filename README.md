@@ -57,19 +57,21 @@ For Chinese documentation, please see:
 
 ## File Structure
 
+The theme includes the following files:
+
 ``
 content-manager-custom-theme/
-├── 404.php          # Custom 404 page template
-├── category.php     # Category archive template
-├── footer.php       # Footer section
-├── functions.php    # Theme functions and setup
-├── header.php       # Header section with navigation
-├── index.php        # Main blog index template
-├── public_key.pem   # Public key for verification
-├── screenshot.png   # Theme preview image
-├── single.php       # Single post template
-├── style.css        # Main stylesheet
-└── tag-channel.php  # Tag archive template
+├── 404.php              # Custom 404 error page template
+├── category.php         # Category archive template
+├── footer.php           # Footer section with site information
+├── functions.php        # Theme functions, setup, and feature support
+├── header.php           # Header section with navigation menu
+├── index.php            # Main template file for blog index and archive listings
+├── public_key.pem       # Public key file for API verification
+├── screenshot.png       # Theme preview image displayed in admin
+├── single.php           # Template for single post display
+├── style.css            # Main stylesheet with theme information header
+└── tag-channel.php      # Specialized tag archive template for channel pages
 ``
 
 ## Requirements
